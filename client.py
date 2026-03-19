@@ -76,4 +76,5 @@ def main():
         if not exited:
             print("(*) ДО СВИДАНИЯ!")
 
+
 main()
