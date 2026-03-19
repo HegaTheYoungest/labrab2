@@ -75,6 +75,8 @@ def handle_client(conn, addr):
             if conn in active_clients:
                 active_clients.remove(conn)
         conn.close()
+        with print_lock:
+            print(f"(+) КЛИЕНТ {addr} ОТКЛЮЧИЛСЯ")
 
 def main():
     global server_running
